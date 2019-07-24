@@ -41,7 +41,7 @@ public class StripePayController {
 
     @RequestMapping(value = "/charge")
     public String charge(final HttpServletRequest request, final HttpServletResponse response, Model model, String amount, String orderCode,  String stripeToken) throws StripeException {
-        Stripe.apiKey = "sk_test_g7vzstAemYn9cXlZPHleFleI00HOQYzW9X";
+        Stripe.apiKey = "sk_test_*************************";
 
         PayOrder payOrder = new PayOrder();
         payOrder.setPrice(BigDecimal.valueOf(Long.parseLong(amount)));
